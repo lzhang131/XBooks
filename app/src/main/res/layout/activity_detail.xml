@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.SearchActivity">
+
+    <include layout="@layout/action_bar"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:paddingVertical="10dp"
+                      android:paddingHorizontal="10dp"
+                      android:orientation="vertical">
+
+            <TextView android:id="@+id/detail_title"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:text="Title"
+                      android:textSize="24sp"/>
+
+            <TextView android:id="@+id/detail_author"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="By AAA"
+                      android:textSize="18sp"/>
+
+            <TextView android:id="@+id/detail_publisher"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="PUBLISHER"
+                      android:textSize="18sp"/>
+
+            <ImageView android:id="@+id/detail_book_image"
+                       android:layout_width="match_parent"
+                       android:src="@mipmap/b101"
+                       android:scaleType="matrix"
+                       android:layout_height="wrap_content"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_vertical"
+                          android:paddingVertical="10dp"
+                          android:orientation="horizontal">
+                <ImageView
+                        android:id="@+id/detail_bookmark"
+                        android:layout_width="30dp"
+                        android:src="@drawable/bookmark_unselect"
+                        android:layout_height="30dp"/>
+                <TextView
+                        android:id="@+id/detail_bookmark_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_vertical|end"
+                              android:orientation="horizontal">
+                    <ImageView
+                            android:id="@+id/detail_like"
+                            android:layout_width="30dp"
+                            android:src="@drawable/like_unselect"
+                            android:layout_height="30dp"/>
+                    <TextView
+                            android:id="@+id/detail_like_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/detail_book_intro"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:text="intro"
+                      android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bgcolor"
+              android:orientation="vertical"
+              tools:context=".ui.TopicActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="30dp"
+                  android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/register_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="Select Book category"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_horizontal"
+                          android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/topic_1"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:text="Arts &#38; Photography"
+                        android:tag="1"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:background="@drawable/topic_item"/>
+
+
+                <TextView
+                        android:id="@+id/topic_2"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:text="Business &#38; Money"
+                        android:tag="1"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/topic_item"
+                        android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_horizontal"
+                          android:layout_marginTop="40dp">
+
+                <TextView
+                        android:id="@+id/topic_3"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Computers &#38; Technology"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:tag="1"
+                        android:textSize="16sp"
+                        android:background="@drawable/topic_item"/>
+
+
+                <TextView
+                        android:id="@+id/topic_4"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Cookbooks, Food &#38; Wine"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:textSize="16sp"
+                        android:tag="1"
+                        android:background="@drawable/topic_item"
+                        android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_horizontal"
+                          android:layout_marginTop="40dp">
+
+                <TextView
+                        android:id="@+id/topic_5"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Crafts, Hobbies &#38; Home"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:textSize="16sp"
+                        android:tag="1"
+                        android:background="@drawable/topic_item"/>
+
+
+                <TextView
+                        android:id="@+id/topic_6"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Education &#38; Teaching"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:textSize="16sp"
+                        android:tag="1"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/topic_item"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_horizontal"
+                          android:layout_marginTop="40dp">
+
+
+                <TextView
+                        android:id="@+id/topic_7"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="Health, Fitness &#38; Dieting"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="10dp"
+                        android:textSize="16sp"
+                        android:tag="1"
+                        android:background="@drawable/topic_item"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="bottom"
+                          android:layout_weight="1">
+
+
+                <Button android:id="@+id/topic_submit"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/input"
+                        android:layout_marginBottom="40dp"
+                        android:text="OK"
+                        android:layout_height="40dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
