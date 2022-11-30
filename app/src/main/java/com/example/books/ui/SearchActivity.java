@@ -83,7 +83,7 @@ public class SearchActivity extends AppCompatActivity {
 
         UserModel currentUser = MainApplicationStart.currentUser;
         String userId = currentUser.getId();
-        List<String> categories = Arrays.asList(currentUser.getTopic().split(","));
+        List<String> categories = Arrays.asList(currentUser.getTopic().split("@"));
         DbHelper db = DbHelper.getInstance();
         List<BookModel> books = db.searchBooks(userId, keywords, categories);
         mBooks.clear();
